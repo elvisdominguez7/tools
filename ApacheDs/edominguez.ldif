@@ -1,0 +1,65 @@
+version: 1
+
+dn: ou=people,dc=edominguez,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: people
+
+dn: ou=groups,dc=edominguez,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: groups
+
+dn: uid=edominguez7,ou=people,dc=edominguez,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: system admin
+sn:administrator
+uid: edominguez7
+userPassword: chelo3521
+
+dn: uid=tester,ou=people,dc=edominguez,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: app tester
+sn:tester
+uid: tester
+userPassword: chelo3521
+
+dn: uid=vendor,ou=people,dc=edominguez,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: vendors
+sn:vendor
+uid: vendor
+userPassword: chelo3521
+
+dn: cn=ASSOCIATES,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+ou: groups
+description: Internal Employees
+uniquemember: uid=edominguez7, ou=people, dc=edominguez,dc=com
+cn: ASSOCIATES
+
+dn: cn=VENDORS,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+ou: groups
+description: Company's Sellers & Suppliers
+uniquemember: uid=vendor, ou=people, dc=edominguez,dc=com
+cn: VENDORS
+
+dn: cn=TESTERS,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+ou: groups
+description: App Testers
+uniquemember: uid=tester, ou=people, dc=edominguez,dc=com
+cn: TESTERS
