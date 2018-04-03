@@ -4,6 +4,10 @@ Use directory studio to manage server
 Copy tar and extract it and do the following:
 
 copy folder in desired location
+
+for permission denied
+sudo chmod 755 apacheds.sh
+
 to start the server: ./apacheds.sh default start
 
 in apache directory:
