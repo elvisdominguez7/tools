@@ -1,3 +1,16 @@
+Tomcat:
+
+users.xml:
+
+<role rolename="manager-gui"/>
+  <role rolename="admin-gui"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-jmx"/>
+  <role rolename="manager-status"/>
+  <user username="tomcat" password="tomcat1234" roles="manager-gui,admin-gui,manager-script"/>
+  
+
+
 ApacheDs does not required external db
 MacOx high Sierra is not compatible with dmg
 Use directory studio to manage server
@@ -24,3 +37,41 @@ name=edominguez
 
 bind or user:
 uid=edominguez7,ou=people,dc=edominguez,dc=com
+
+Apache Syncope:
+Tomcat:
+ in web app manager web xml:
+ <multipart-config>
+      <!-- 50MB max -->
+      <max-file-size>102428800</max-file-size>
+      <max-request-size>102428800</max-request-size>
+      <file-size-threshold>0</file-size-threshold>
+    </multipart-config>
+    
+  download postgresql driver jar and paste it in tomcat lib, restart the server
+  
+  Create syncope user,db and associate that user with db
+  donwload syncope uber jar and run it
+  
+  Define a Connector
+
+The next thing to do is to define a Connector to enable Syncope to talk to the Apache DS backend. Click on "Topology" in the left-hand menu, and on the ConnId instance on the map. Click "Add new connector" and create a new Connector of type "net.tirasa.connid.bundles.ldap". On the next tab select:
+Host: localhost
+TCP Port: 10389
+Principal: uid=edominguez7,ou=people,dc=edominguez,dc=com
+Password: <password>
+Base Contexts: ou=people,ou=groups
+LDAP Filter for retrieving accounts: cn=*
+Group Object Classes: groupOfNames
+Group member attribute: member
+Click on "Maintain LDAP Group Membership".
+Uid attribute: cn
+Base Context to Synchronize: ou=people,ou=groups
+Object Classes to Synchronize: inetOrgPerson and groupOfNames
+Status Management Class: net.tirasa.connid.bundles.ldap.commons.AttributeStatusManagement
+Tick "Retrieve passwords with search".
+Click on the "heart" icon at the top of tab to check to see whether Syncope is able to connect to the backend resource. If you don't see a green "Successful Connection" message, then consult the logs. On the next tab select all of the available capabilities and click on "Finish".
+
+Define a Resource:
+http://coheigea.blogspot.com/2016/08/pulling-users-and-groups-from-ldap-into.html
+
