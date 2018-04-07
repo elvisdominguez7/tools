@@ -1,5 +1,48 @@
 version: 1
 
+dn: dc=edominguez,dc=com
+objectclass: top
+objectclass: domain
+dc: edominguez
+
+dn: ou=people,dc=edominguez,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: people
+
+dn: uid=edominguez7,ou=people,dc=edominguez,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: system admin
+sn: administrator
+uid: edominguez7
+userPassword:: e1NTSEF9OTV6MkJMQnNzckY1bDFhOUxtK3pHNVd2dWpkcXhOSWxWeE9KclE9P
+ Q==
+
+dn: uid=tester7,ou=people,dc=edominguez,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: app tester
+sn: tester
+uid: tester7
+userPassword:: e1NTSEF9TmpOMHhJYkg4Q00wVVBqSy9QRHdRWFhabCtBd1dDOVFaWUNWNHc9P
+ Q==
+ 
+dn: uid=vendor7,ou=people,dc=edominguez,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: vendor tester
+sn: vendor
+uid: vendor7
+userPassword:: e1NTSEF9UkRRL2JtUVZtWWh1U0NrMVJKZXdIK0t3OGRtYlNHcVVYb2RFYlE9P
+ Q==
+
 dn: ou=groups,dc=edominguez,dc=com
 objectClass: organizationalUnit
 objectClass: top
@@ -9,7 +52,7 @@ dn: cn=VENDORS,ou=groups,dc=edominguez,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
 cn: VENDORS
-uniquemember: uid=vendor, ou=people, dc=edominguez,dc=com
+uniquemember: uid=vendor7, ou=people, dc=edominguez,dc=com
 description: Company's Sellers & Suppliers
 ou: groups
 
@@ -28,54 +71,11 @@ cn: ADMINISTRATORS
 uniqueMember: uid=elvsdominguez7,ou=people,dc=edominguez,dc=com
 ou: groups
 
-dn: uid=vendor,ou=people,dc=edominguez,dc=com
-objectClass: organizationalPerson
-objectClass: person
-objectClass: inetOrgPerson
-objectClass: top
-cn: vendors
-sn: vendor
-uid: vendor
-userPassword:: e1NTSEF9UkRRL2JtUVZtWWh1U0NrMVJKZXdIK0t3OGRtYlNHcVVYb2RFYlE9P
- Q==
-
-dn: dc=edominguez,dc=com
-objectclass: top
-objectclass: domain
-dc: edominguez
-
-dn: uid=edominguez7,ou=people,dc=edominguez,dc=com
-objectClass: organizationalPerson
-objectClass: person
-objectClass: inetOrgPerson
-objectClass: top
-cn: system admin
-sn: administrator
-uid: edominguez7
-userPassword:: e1NTSEF9OTV6MkJMQnNzckY1bDFhOUxtK3pHNVd2dWpkcXhOSWxWeE9KclE9P
- Q==
-
-dn: uid=tester,ou=people,dc=edominguez,dc=com
-objectClass: organizationalPerson
-objectClass: person
-objectClass: inetOrgPerson
-objectClass: top
-cn: app tester
-sn: tester
-uid: tester
-userPassword:: e1NTSEF9TmpOMHhJYkg4Q00wVVBqSy9QRHdRWFhabCtBd1dDOVFaWUNWNHc9P
- Q==
-
-dn: ou=people,dc=edominguez,dc=com
-objectClass: organizationalUnit
-objectClass: top
-ou: people
 
 dn: cn=TESTERS,ou=groups,dc=edominguez,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
 cn: TESTERS
-uniquemember: uid=tester, ou=people, dc=edominguez,dc=com
+uniquemember: uid=tester7, ou=people, dc=edominguez,dc=com
 description: App Testers
 ou: groups
-
