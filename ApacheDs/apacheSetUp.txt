@@ -17,4 +17,4 @@ bnd: uid=admin,ou=system
 pass:secret
 
 create ldif file and start copying each section:
-domain,each user without domain,then the whole rest section together without domain
+domain,each user without domain,then the whole rest section together without domain importing each on the new domain
