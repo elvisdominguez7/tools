@@ -32,11 +32,7 @@ pass:secret
 create ldif file and start copying each section:
 domain,each user without domain,then the whole rest section together without domain importing each on the new domain
 
-create new connection:
-name=edominguez
 
-bind or user:
-uid=edominguez7,ou=people,dc=edominguez,dc=com
 
 Apache Syncope:
 Tomcat:
