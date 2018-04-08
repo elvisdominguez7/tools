@@ -53,25 +53,46 @@ Tomcat:
   Create syncope user,db and associate that user with db
   donwload syncope uber jar and run it
   
-  Define a Connector
+ 1-ApacheDS:
+ Create ldif file and modify to create new user
+ 
+dn: uid=devOps7,ou=system
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Developers 
+sn: Operators
+displayName: Developers & Operators
+uid: devOps7
+userPassword:: devOps1234
 
-The next thing to do is to define a Connector to enable Syncope to talk to the Apache DS backend. Click on "Topology" in the left-hand menu, and on the ConnId instance on the map. Click "Add new connector" and create a new Connector of type "net.tirasa.connid.bundles.ldap". On the next tab select:
+*Groups:
+dn: cn=DevOps,ou=groups,ou=system
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: DevOps
+uniqueMember: uid=vendor7, ou=users, dc=example,dc=com
+  
+  
+1-Define a Connector
+
 Host: localhost
 TCP Port: 10389
-Principal: uid=edominguez7,ou=people,dc=edominguez,dc=com
+Principal: uid=admin,ou=system
 Password: <password>
-Base Contexts: ou=people,ou=groups
-LDAP Filter for retrieving accounts: cn=*
-Group Object Classes: groupOfNames
-Group member attribute: member
+Base Contexts: ou=users,ou=system and ou=groups,ou=system
+LDAP Filter for retrieving accounts: uid=*
+Group Object Classes: groupOfUniqueNames
+Group member attribute: uniqueMember
 Click on "Maintain LDAP Group Membership".
-Uid attribute: cn
-Base Context to Synchronize: ou=people,ou=groups
+Uid attribute: uid
+Base Context to Synchronize: ou=users,ou=system and ou=groups,ou=system
 Object Classes to Synchronize: inetOrgPerson and groupOfNames
 Status Management Class: net.tirasa.connid.bundles.ldap.commons.AttributeStatusManagement
 Tick "Retrieve passwords with search".
 Click on the "heart" icon at the top of tab to check to see whether Syncope is able to connect to the backend resource. If you don't see a green "Successful Connection" message, then consult the logs. On the next tab select all of the available capabilities and click on "Finish".
 
-Define a Resource:
+2-Define a Resource:
 http://coheigea.blogspot.com/2016/08/pulling-users-and-groups-from-ldap-into.html
 
