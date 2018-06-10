@@ -1,0 +1,10 @@
+dn: uid=devOps7,ou=system
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Developers 
+sn: Operators
+displayName: Developers & Operators
+uid: devOps7
+userPassword:: devOps1234

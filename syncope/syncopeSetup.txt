@@ -1,0 +1,31 @@
+host: localhost
+port:10389
+principal:uid=admin,ou=system
+base context:
+ou=users,ou=system
+ou=groups,ou=system
+
+password attrib:userPassword
+
+Account Object Classes:organizationalPerson,inetOrgPerson
+
+Account User Name Attributes:uid
+LDAP Filter for Retrieving Accounts:uid=*
+Group Object Classes:groupOfUniqueNames
+Group Name Attributes:cn
+Group Member Attribute:uniqueMember
+Password Hash Algorithm:SSHA
+VLV Sort Attribute:uid
+
+Uid Attribute:uid
+Uid Attribute for groups:cn
+Base Contexts to Synchronize:ou=users,ou=system,ou=groups,ou=system
+
+Object Classes to Synchronize:inetOrgPerson,organizationPerson,groupOfUniqueNames
+LDAP Filter for Accounts to Synchronize:uid=*
+Change Number Attribute:changeNumber
+Password Attribute to Synchronize:userPassword
+
+Status management classd:net.tirasa.connid.bundles.ldap.commons.AttributeStatusManagement
+Entry DN attribute name:dn
+LDAP Filter for Retrieving Groups:cn=*

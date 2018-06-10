@@ -1,0 +1,16 @@
+
+dn: uid=devops,ou=users,ou=system
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Developer
+sn: Operator
+displayName: Elvis Dominguez
+uid: devops
+userPassword:: devops1234
+
+
+
+
+

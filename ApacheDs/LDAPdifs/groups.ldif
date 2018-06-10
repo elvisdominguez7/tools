@@ -1,0 +1,5 @@
+dn: cn=Testers,ou=groups,ou=system
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: Testers
+uniqueMember: cn=Tester, ou=users,ou=system
