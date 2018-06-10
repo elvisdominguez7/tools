@@ -1,3 +1,5 @@
+Connector:
+
 host: localhost
 port:10389
 principal:uid=admin,ou=system
@@ -29,3 +31,8 @@ Password Attribute to Synchronize:userPassword
 Status management classd:net.tirasa.connid.bundles.ldap.commons.AttributeStatusManagement
 Entry DN attribute name:dn
 LDAP Filter for Retrieving Groups:cn=*
+
+Resource:
+Users Mapping:'cn=' + username+ ',ou=users,ou=system'
+
+Groups Mapping:'cn=' + name + ',ou=groups,ou=system'
