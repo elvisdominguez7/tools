@@ -41,7 +41,7 @@ sn: IDM
 uid: jenkins
 userPassword:: syncope1234
 
-dn: uid=tester7,ou=people,dc=edominguez,dc=com
+dn: uid=tester,ou=people,dc=edominguez,dc=com
 objectClass: organizationalPerson
 objectClass: person
 objectClass: inetOrgPerson
@@ -52,7 +52,7 @@ uid: tester7
 userPassword:: e1NTSEF9TmpOMHhJYkg4Q00wVVBqSy9QRHdRWFhabCtBd1dDOVFaWUNWNHc9P
  Q==
  
-dn: uid=vendor7,ou=people,dc=edominguez,dc=com
+dn: uid=vendor,ou=people,dc=edominguez,dc=com
 objectClass: organizationalPerson
 objectClass: person
 objectClass: inetOrgPerson
@@ -77,26 +77,26 @@ uniquemember: uid=syncope, ou=people, dc=edominguez,dc=com
 description: Process Ids for Apps/Services Only
 ou: groups
 
-dn: cn=VENDORS,ou=groups,dc=edominguez,dc=com
+dn: cn=Vendors,ou=groups,dc=edominguez,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: VENDORS
-uniquemember: uid=vendor7, ou=people, dc=edominguez,dc=com
+cn: Vendors
+uniquemember: uid=vendors, ou=people, dc=edominguez,dc=com
 description: Company's Sellers & Suppliers
 ou: groups
 
-dn: cn=ASSOCIATES,ou=groups,dc=edominguez,dc=com
+dn: cn=Associates,ou=groups,dc=edominguez,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: ASSOCIATES
+cn: Associates
 uniquemember: uid=edominguez7, ou=people, dc=edominguez,dc=com
 description: Internal Employees
 ou: groups
 
-dn: cn=ADMINISTRATORS,ou=groups,dc=edominguez,dc=com
+dn: cn=Administrators,ou=groups,dc=edominguez,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: ADMINISTRATORS
+cn: Administrator
 uniqueMember: uid=elvsdominguez7,ou=people,dc=edominguez,dc=com
 ou: groups
 
