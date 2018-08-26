@@ -20,6 +20,26 @@ sn: administrator
 uid: edominguez7
 userPassword:: e1NTSEF9OTV6MkJMQnNzckY1bDFhOUxtK3pHNVd2dWpkcXhOSWxWeE9KclE9P
  Q==
+ 
+dn: uid=jenkins,ou=people,dc=edominguez,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Jenkins
+sn: CI
+uid: jenkins
+userPassword:: jenkins1234
+ 
+dn: uid=syncope,ou=people,dc=edominguez,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: syncope
+sn: IDM
+uid: jenkins
+userPassword:: syncope1234
 
 dn: uid=tester7,ou=people,dc=edominguez,dc=com
 objectClass: organizationalPerson
@@ -46,6 +66,15 @@ userPassword:: e1NTSEF9UkRRL2JtUVZtWWh1U0NrMVJKZXdIK0t3OGRtYlNHcVVYb2RFYlE9P
 dn: ou=groups,dc=edominguez,dc=com
 objectClass: organizationalUnit
 objectClass: top
+ou: groups
+
+dn: cn=Apps,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: Apps
+uniquemember: uid=jenkins, ou=people, dc=edominguez,dc=com
+uniquemember: uid=syncope, ou=people, dc=edominguez,dc=com
+description: Process Ids for Apps/Services Only
 ou: groups
 
 dn: cn=VENDORS,ou=groups,dc=edominguez,dc=com
