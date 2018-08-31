@@ -1,10 +1,155 @@
-dn: uid=devops,ou=people,dc=edominguez,dc=com
+version: 1
+
+dn: uid=devOps,ou=people,dc=edominguez,dc=com
 objectClass: inetOrgPerson
-objectClass: organizationalPerson
 objectClass: person
+objectClass: organizationalPerson
 objectClass: top
 cn: Developer
 sn: Operator
-displayName: Elvis Dominguez
-uid: devops
-userPassword:: devops1234
+uid: devOps
+userPassword:: e1NTSEF9cHRwemxaeGpvS2gxTFVLVlFiMGNGWFdaVllBVzBRUFF6QVJxa0E9P
+ Q==
+
+dn: uid=testers,ou=people,dc=edominguez,dc=com
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: top
+cn: app tester
+sn: tester
+uid: testers
+userPassword:: e1NTSEF9S1hQQUdkak9PQ0JqR0hlOVZZU0pYdm9CeUgrOElSRFJOOGVIdHc9P
+ Q==
+
+dn: uid=jenkins,ou=people,dc=edominguez,dc=com
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: top
+cn: jenkins
+sn: CI
+uid: jenkins
+userPassword:: e1NTSEF9U0Z0M1JNL3JPN1pac2JlWDFJSFE4QVFETEVobXRBNGYxZ0JTbVE9P
+ Q==
+
+dn: cn=Associates,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: Associates
+uniquemember: uid=edominguez7, ou=people, dc=edominguez,dc=com
+description: Internal Employees
+ou: groups
+
+dn: uid=elvisdominguez7,ou=people,dc=edominguez,dc=com
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: top
+cn: system admin
+sn: administrator
+uid: elvisdominguez7
+userPassword:: e1NTSEF9b29wNk94NGQ3V2hSU01sSWMzV2prRkZhandWMWJldG56cldZWVE9P
+ Q==
+
+dn: cn=Apps,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: Apps
+uniquemember: uid=jenkins, ou=people, dc=edominguez,dc=com
+uniquemember: uid=syncope, ou=people, dc=edominguez,dc=com
+description: Process Ids for Apps/Services Only
+ou: groups
+
+dn: dc=edominguez,dc=com
+objectclass: top
+objectclass: domain
+dc: edominguez
+
+dn: uid=vendors,ou=people,dc=edominguez,dc=com
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: top
+cn: vendor tester
+sn: vendor
+uid: vendors
+userPassword:: e1NTSEF9U2wzOWhvdkdKT0ZTcXZBblpTR1VqeUh3RCtvcFg2U2ZkODJlaFE9P
+ Q==
+
+dn: cn=Vendors,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: VENDORS
+uniquemember: uid=vendors, ou=people, dc=edominguez,dc=com
+description: Company's Sellers & Suppliers
+ou: groups
+
+dn: cn=Administrators,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: Administrators
+uniquemember: uid=elvisdominguez7, ou=people, dc=edominguez,dc=com
+description: System Admin
+ou: groups
+
+dn: ou=people,dc=edominguez,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: people
+
+dn: cn=Testers,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: Apps
+cn: Testers
+uniquemember: uid=testers, ou=people, dc=edominguez,dc=com
+description: Test Ids
+ou: groups
+
+dn: uid=syncope,ou=people,dc=edominguez,dc=com
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: top
+cn: syncope
+sn: IDM
+uid: jenkins
+uid: syncope
+userPassword:: e1NTSEF9OGxTK3FtY1NIYTQwUU5KaHNoaERCV2Y1YStESnhuZDZUVHdNMWc9P
+ Q==
+
+dn: uid=idm,ou=people,dc=edominguez,dc=com
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: organizationalPerson
+objectClass: top
+cn: Apache
+sn: IDM
+uid: idm
+userPassword:: e1NTSEF9ZFZqaDgzNjJycFUrdkcrMjJtbUF6dDRpS0FjeG9wU0RGcFFHdkE9P
+ Q==
+
+dn: cn=DevOps,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: DevOps
+uniquemember: uid=devops, ou=people, dc=edominguez,dc=com
+description: Developers & Operators
+ou: groups
+
+dn: cn=Tools,ou=groups,dc=edominguez,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: Tools
+uniquemember: uid=jenkins, ou=people, dc=edominguez,dc=com
+uniquemember: uid=syncope, ou=people, dc=edominguez,dc=com
+uniquemember: uid=idm,ou=people,dc=edominguez,dc=com
+description: Tools & Utilities Auth
+ou: groups
+
+dn: ou=groups,dc=edominguez,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: groups
+
