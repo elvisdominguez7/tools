@@ -1,0 +1,35 @@
+Create a DB with archiva name and archiva user
+
+Edit add in jetty xml(this one has it already just for info purpose):
+
+Change port to 9080 then add
+
+<New id="users" class="org.eclipse.jetty.plus.jndi.Resource">
+    <Arg>jdbc/users</Arg>
+    <Arg>
+      <New class="org.apache.tomcat.jdbc.pool.DataSource">
+        <Set name="driverClassName">org.postgresql.Driver</Set>
+        <Set name="url">jdbc:postgresql://localhost/archiva</Set>
+        <Set name="name">ArchivaApp</Set>
+        <Set name="username">archiva</Set>
+        <Set name="password">archiva1234</Set>
+        <!-- depends on your concurrent users numbers -->
+        <Set name="maxWait">10000</Set>
+        <Set name="removeAbandonedTimeout">10000</Set>
+        <Set name="maxActive">30</Set>
+        <Set name="initialSize">15</Set>
+        <Set name="removeAbandoned">true</Set>
+        <Set name="logAbandoned">true</Set>
+        <Set name="testOnBorrow">false</Set>
+        <Set name="testOnReturn">false</Set>
+        <!-- very rigourous sql query validation -->
+        <Set name="validationQuery">select 1</Set>
+      </New>
+    </Arg>
+  </New>
+  
+ Add postgres jar into lib dir :
+ postgresql-42.1.4.jar
+ 
+ Add in wrapper xml:
+ wrapper.java.classpath.27=%REPO_DIR%/postgresql-42.1.4.jar

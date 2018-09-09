@@ -1,0 +1,81 @@
+STATUS | wrapper  | 2018/09/08 20:29:12 | Apache Archiva installed.
+STATUS | wrapper  | 2018/09/08 20:29:19 | Starting the Apache Archiva service...
+STATUS | wrapper  | 2018/09/08 20:29:19 | --> Wrapper Started as Service
+STATUS | wrapper  | 2018/09/08 20:29:20 | Launching a JVM...
+INFO   | jvm 1    | 2018/09/08 20:29:20 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2018/09/08 20:29:20 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2018/09/08 20:29:20 | 
+INFO   | jvm 1    | 2018/09/08 20:29:20 | 2018-09-08 20:29:20.392:WARN:oejd.ContextDeployer:ContextDeployer is deprecated. Use ContextProvider
+INFO   | jvm 1    | 2018/09/08 20:29:20 | 2018-09-08 20:29:20.395:WARN:oejd.WebAppDeployer:WebAppDeployer is deprecated. Use WebAppProvider
+INFO   | jvm 1    | 2018/09/08 20:29:20 | 2018-09-08 20:29:20.442:INFO:oejs.Server:jetty-8.1.14.v20131031
+INFO   | jvm 1    | 2018/09/08 20:29:20 | 2018-09-08 20:29:20.452:INFO:oejs.NCSARequestLog:Opened C:\Users\elvis\Applications\Artifactory\archiva\logs\request-20180909.log
+INFO   | jvm 1    | 2018/09/08 20:29:20 | 2018-09-08 20:29:20.473:INFO:oejd.ContextDeployer:Deploy C:\Users\elvis\Applications\Artifactory\archiva\contexts\archiva.xml -> o.e.j.w.WebAppContext{/,null},C:\Users\elvis\Applications\Artifactory\archiva/apps/archiva
+INFO   | jvm 1    | 2018/09/08 20:29:22 | 2018-09-08 20:29:22.083:INFO:oejpw.PlusConfiguration:No Transaction manager found - if your webapp requires one, please configure one.
+INFO   | jvm 1    | 2018/09/08 20:29:22 | 2018-09-08 20:29:22.148:INFO:oejw.StandardDescriptorProcessor:NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+INFO   | jvm 1    | 2018/09/08 20:29:22 | 2018-09-08 20:29:22.554:INFO:/:Initializing Spring root WebApplicationContext
+STATUS | wrapper  | 2018/09/08 20:29:23 | Apache Archiva started.
+INFO   | jvm 1    | 2018/09/08 20:29:26 | Sep 08, 2018 8:29:26 PM org.apache.tomcat.jdbc.pool.ConnectionPool init
+INFO   | jvm 1    | 2018/09/08 20:29:26 | WARNING: maxIdle is larger than maxActive, setting maxIdle to: 30
+INFO   | jvm 1    | 2018/09/08 20:29:30 | 2018-09-08 20:29:30.552:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:9090
+INFO   | jvm 1    | 2018/09/08 20:29:30 | [INFO] Unable to read properties file, will force index regeneration
+INFO   | jvm 1    | 2018/09/08 20:29:30 | [INFO] Unable to read properties file, will force index regeneration
+STATUS | wrapper  | 2018/09/08 21:20:22 | --> Wrapper Started as Service
+STATUS | wrapper  | 2018/09/08 21:20:22 | Launching a JVM...
+INFO   | jvm 1    | 2018/09/08 21:20:23 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2018/09/08 21:20:23 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2018/09/08 21:20:23 | 
+INFO   | jvm 1    | 2018/09/08 21:20:23 | 2018-09-08 21:20:23.878:WARN:oejd.ContextDeployer:ContextDeployer is deprecated. Use ContextProvider
+INFO   | jvm 1    | 2018/09/08 21:20:23 | 2018-09-08 21:20:23.885:WARN:oejd.WebAppDeployer:WebAppDeployer is deprecated. Use WebAppProvider
+INFO   | jvm 1    | 2018/09/08 21:20:24 | 2018-09-08 21:20:23.976:INFO:oejs.Server:jetty-8.1.14.v20131031
+INFO   | jvm 1    | 2018/09/08 21:20:24 | 2018-09-08 21:20:23.996:INFO:oejs.NCSARequestLog:Opened C:\Users\elvis\Applications\Artifactory\archiva\logs\request-20180909.log
+INFO   | jvm 1    | 2018/09/08 21:20:24 | 2018-09-08 21:20:24.036:INFO:oejd.ContextDeployer:Deploy C:\Users\elvis\Applications\Artifactory\archiva\contexts\archiva.xml -> o.e.j.w.WebAppContext{/,null},C:\Users\elvis\Applications\Artifactory\archiva/apps/archiva
+INFO   | jvm 1    | 2018/09/08 21:20:28 | 2018-09-08 21:20:28.601:INFO:oejpw.PlusConfiguration:No Transaction manager found - if your webapp requires one, please configure one.
+INFO   | jvm 1    | 2018/09/08 21:20:28 | 2018-09-08 21:20:28.700:INFO:oejw.StandardDescriptorProcessor:NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+INFO   | jvm 1    | 2018/09/08 21:20:29 | 2018-09-08 21:20:29.505:INFO:/:Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2018/09/08 21:20:36 | Sep 08, 2018 9:20:36 PM org.apache.tomcat.jdbc.pool.ConnectionPool init
+INFO   | jvm 1    | 2018/09/08 21:20:36 | WARNING: maxIdle is larger than maxActive, setting maxIdle to: 30
+INFO   | jvm 1    | 2018/09/08 21:20:47 | 2018-09-08 21:20:46.943:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:9090
+INFO   | jvm 1    | 2018/09/08 21:28:08 | 2018-09-08 21:28:08.875:INFO:oejs.Server:Graceful shutdown SelectChannelConnector@0.0.0.0:9090
+INFO   | jvm 1    | 2018/09/08 21:28:08 | 2018-09-08 21:28:08.876:INFO:oejs.Server:Graceful shutdown o.e.j.w.WebAppContext{/,file:/C:/Users/elvis/Applications/Artifactory/archiva/apps/archiva/},C:\Users\elvis\Applications\Artifactory\archiva/apps/archiva
+INFO   | jvm 1    | 2018/09/08 21:28:10 | 2018-09-08 21:28:10.037:INFO:/:Closing Spring root WebApplicationContext
+INFO   | jvm 1    | 2018/09/08 21:28:10 | 2018-09-08 21:28:10.101:INFO:oejsh.ContextHandler:stopped o.e.j.w.WebAppContext{/,file:/C:/Users/elvis/Applications/Artifactory/archiva/apps/archiva/},C:\Users\elvis\Applications\Artifactory\archiva/apps/archiva
+INFO   | jvm 1    | 2018/09/08 21:28:10 | Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=128m; support was removed in 8.0
+STATUS | wrapper  | 2018/09/08 21:28:10 | <-- Wrapper Stopped
+STATUS | wrapper  | 2018/09/08 21:28:13 | --> Wrapper Started as Service
+STATUS | wrapper  | 2018/09/08 21:28:13 | Launching a JVM...
+INFO   | jvm 1    | 2018/09/08 21:28:14 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2018/09/08 21:28:14 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2018/09/08 21:28:14 | 
+INFO   | jvm 1    | 2018/09/08 21:28:15 | 2018-09-08 21:28:15.147:WARN:oejd.ContextDeployer:ContextDeployer is deprecated. Use ContextProvider
+INFO   | jvm 1    | 2018/09/08 21:28:15 | 2018-09-08 21:28:15.152:WARN:oejd.WebAppDeployer:WebAppDeployer is deprecated. Use WebAppProvider
+INFO   | jvm 1    | 2018/09/08 21:28:15 | 2018-09-08 21:28:15.208:INFO:oejs.Server:jetty-8.1.14.v20131031
+INFO   | jvm 1    | 2018/09/08 21:28:15 | 2018-09-08 21:28:15.230:INFO:oejs.NCSARequestLog:Opened C:\Users\elvis\Applications\Artifactory\archiva\logs\request-20180909.log
+INFO   | jvm 1    | 2018/09/08 21:28:15 | 2018-09-08 21:28:15.259:INFO:oejd.ContextDeployer:Deploy C:\Users\elvis\Applications\Artifactory\archiva\contexts\archiva.xml -> o.e.j.w.WebAppContext{/,null},C:\Users\elvis\Applications\Artifactory\archiva/apps/archiva
+INFO   | jvm 1    | 2018/09/08 21:28:19 | 2018-09-08 21:28:19.261:INFO:oejpw.PlusConfiguration:No Transaction manager found - if your webapp requires one, please configure one.
+INFO   | jvm 1    | 2018/09/08 21:28:19 | 2018-09-08 21:28:19.440:INFO:oejw.StandardDescriptorProcessor:NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+INFO   | jvm 1    | 2018/09/08 21:28:20 | 2018-09-08 21:28:20.348:INFO:/:Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2018/09/08 21:28:25 | Sep 08, 2018 9:28:25 PM org.apache.tomcat.jdbc.pool.ConnectionPool init
+INFO   | jvm 1    | 2018/09/08 21:28:25 | WARNING: maxIdle is larger than maxActive, setting maxIdle to: 30
+INFO   | jvm 1    | 2018/09/08 21:28:29 | 2018-09-08 21:28:28.947:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:9090
+INFO   | jvm 1    | 2018/09/08 21:39:22 | 2018-09-08 21:39:22.140:INFO:oejs.Server:Graceful shutdown SelectChannelConnector@0.0.0.0:9090
+INFO   | jvm 1    | 2018/09/08 21:39:22 | 2018-09-08 21:39:22.142:INFO:oejs.Server:Graceful shutdown o.e.j.w.WebAppContext{/,file:/C:/Users/elvis/Applications/Artifactory/archiva/apps/archiva/},C:\Users\elvis\Applications\Artifactory\archiva/apps/archiva
+INFO   | jvm 1    | 2018/09/08 21:39:23 | 2018-09-08 21:39:23.283:INFO:/:Closing Spring root WebApplicationContext
+INFO   | jvm 1    | 2018/09/08 21:39:23 | 2018-09-08 21:39:23.341:INFO:oejsh.ContextHandler:stopped o.e.j.w.WebAppContext{/,file:/C:/Users/elvis/Applications/Artifactory/archiva/apps/archiva/},C:\Users\elvis\Applications\Artifactory\archiva/apps/archiva
+INFO   | jvm 1    | 2018/09/08 21:39:23 | Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=128m; support was removed in 8.0
+STATUS | wrapper  | 2018/09/08 21:39:23 | <-- Wrapper Stopped
+STATUS | wrapper  | 2018/09/08 21:39:26 | --> Wrapper Started as Service
+STATUS | wrapper  | 2018/09/08 21:39:27 | Launching a JVM...
+INFO   | jvm 1    | 2018/09/08 21:39:27 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2018/09/08 21:39:27 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2018/09/08 21:39:27 | 
+INFO   | jvm 1    | 2018/09/08 21:39:27 | 2018-09-08 21:39:27.841:WARN:oejd.ContextDeployer:ContextDeployer is deprecated. Use ContextProvider
+INFO   | jvm 1    | 2018/09/08 21:39:27 | 2018-09-08 21:39:27.846:WARN:oejd.WebAppDeployer:WebAppDeployer is deprecated. Use WebAppProvider
+INFO   | jvm 1    | 2018/09/08 21:39:27 | 2018-09-08 21:39:27.898:INFO:oejs.Server:jetty-8.1.14.v20131031
+INFO   | jvm 1    | 2018/09/08 21:39:27 | 2018-09-08 21:39:27.909:INFO:oejs.NCSARequestLog:Opened C:\Users\elvis\Applications\Artifactory\archiva\logs\request-20180909.log
+INFO   | jvm 1    | 2018/09/08 21:39:28 | 2018-09-08 21:39:27.932:INFO:oejd.ContextDeployer:Deploy C:\Users\elvis\Applications\Artifactory\archiva\contexts\archiva.xml -> o.e.j.w.WebAppContext{/,null},C:\Users\elvis\Applications\Artifactory\archiva/apps/archiva
+INFO   | jvm 1    | 2018/09/08 21:39:31 | 2018-09-08 21:39:31.881:INFO:oejpw.PlusConfiguration:No Transaction manager found - if your webapp requires one, please configure one.
+INFO   | jvm 1    | 2018/09/08 21:39:32 | 2018-09-08 21:39:32.020:INFO:oejw.StandardDescriptorProcessor:NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+INFO   | jvm 1    | 2018/09/08 21:39:32 | 2018-09-08 21:39:32.865:INFO:/:Initializing Spring root WebApplicationContext
+INFO   | jvm 1    | 2018/09/08 21:39:37 | Sep 08, 2018 9:39:37 PM org.apache.tomcat.jdbc.pool.ConnectionPool init
+INFO   | jvm 1    | 2018/09/08 21:39:37 | WARNING: maxIdle is larger than maxActive, setting maxIdle to: 30
+INFO   | jvm 1    | 2018/09/08 21:39:41 | 2018-09-08 21:39:40.965:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:9090
