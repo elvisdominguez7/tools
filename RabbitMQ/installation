@@ -1,0 +1,7 @@
+Install from website
+Open Command Line as admin
+cd to: C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.9\sbin
+run: rabbitmq-plugins.bat enable rabbitmq_management
+rabbitmq-service.bat stop  
+rabbitmq-service.bat install  
+rabbitmq-service.bat start 
